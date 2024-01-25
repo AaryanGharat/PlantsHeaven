@@ -11,7 +11,7 @@ app = Flask(__name__, static_url_path='/static', template_folder='templates')
 # Load the trained model
 # give your saved model location
                                     
-model = keras.models.load_model("archive/best_model1.h5")
+model = keras.models.load_model("location of saved model ")
 
 # Class labels mapping
 ref = {
