@@ -9,6 +9,8 @@ from keras.applications.vgg19 import preprocess_input
 app = Flask(__name__, static_url_path='/static', template_folder='templates')
 
 # Load the trained model
+# give your saved model location
+                                    
 model = keras.models.load_model("archive/best_model1.h5")
 
 # Class labels mapping
