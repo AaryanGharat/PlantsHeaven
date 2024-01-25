@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>Navigation Table</title>
+<style>
+  </style>
+
+</head>
+<body>
+    <nav class="navigation">
+        
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Your Logo" class="logo"  >
+        <span class="navigation-text">PLANT'S HEAVEN</span>
+        
+        <a href="/">PREDICT</a>
+          
+       
+       
+
+<!-- Inside your <nav> element or any suitable location -->
+      
+    </nav>
+
+    <!-- Divide the page into two columns -->
+    <div class="page-content">
+       <div class="left-column">
+ 
+
+    <!-- Prediction Section -->
+    <h2>Prediction</h2>
+        <h1>Upload an Image</h1>
+        <form id="upload-form" method="post" enctype="multipart/form-data">
+            <label for="file-input" id="file-label">
+                <img src="{{ url_for('static', filename='upload-icon.png') }}" alt="Upload Icon" id="image-preview">
+            </label>
+            <input type="file" id="file-input" name="image" accept=".jpg, .jpeg, .png" style="display: none;">
+           <br> <input type="submit" value="Predict">
+        </form>
+    <div id="prediction-result"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</div>
+       
+
+
+
+
+
+<div class="right-column">
+           
+            <h2></h2>
+            <p></p>
+        </div>
+    </div>
+
+
+
+
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+        .page-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .right-column {
+            flex: 1;
+            padding: 20px;
+        }
+nav.navigation {
+   
+    display: flex;
+    align-items: center;
+}
+img.logo {margin-right: 200px;
+    position: static;
+    width: 100px;
+    height: 80px;}
+body {    background-color: rgb(242, 234, 215);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: #37643e;;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0; /* Add padding to center-align links */
+    font-size: xx-large;
+    justify-content: center;}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 20px; /* Add margin to create space between links */
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #ff5733; /* Change the color on hover */
+}
+#language-selector {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+
+  #file-label img {
+    margin-right: 200px;
+    position: static; /* "static" is the default position, so you can omit it */
+    width: 400px;
+    height: 300px;
+}
+input[type="submit"] {
+    width: 150px;
+    height: 40px;
+}
